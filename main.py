@@ -19,9 +19,9 @@ print(f"🌍 Detected system language: {lang}")
 
 # Escoger el script según idioma
 if lang and lang.startswith("es"):
-    script = "pdf_to_images_es.py"
+    script = "pdf_to_image_es.py"
 else:
-    script = "pdf_to_images_en.py"
+    script = "pdf_to_image_en.py"
 
 # Comprobar que el script exista
 if not os.path.exists(script):
