@@ -1,0 +1,2 @@
+chmod +x venv_auto.sh
+./venv_auto.sh
