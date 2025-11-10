@@ -1,2 +1,1 @@
-chmod +x venv_auto.sh
-./venv_auto.sh
+chmod +x venv_auto.sh && chmod +x start.sh && ./venv_auto.sh

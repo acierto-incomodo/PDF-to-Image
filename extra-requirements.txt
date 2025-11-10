@@ -1,2 +1,3 @@
+Python: Python3
 Windows: https://github.com/oschwartz10612/poppler-windows/releases/
 Linux: sudo apt install poppler-utils

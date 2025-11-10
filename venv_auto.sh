@@ -1,20 +1,8 @@
 #!/bin/bash
 
-# Nombre del entorno virtual
-VENV_DIR="venv"
+python3 -m venv venv
 
-# Comprobamos si existe el entorno virtual
-if [ ! -d "$VENV_DIR" ]; then
-    echo "🔹 Creando entorno virtual de Python..."
-    python3 -m venv "$VENV_DIR"
-    echo "✅ Entorno virtual creado en ./$VENV_DIR"
-else
-    echo "✅ Entorno virtual ya existe."
-fi
-
-# Activamos el entorno virtual
-echo "🔹 Activando entorno virtual..."
-source "$VENV_DIR/bin/activate"
+source venv/bin/activate
 
 # (Opcional) Instalar dependencias automáticamente
 if [ -f "requirements.txt" ]; then
@@ -24,3 +12,12 @@ fi
 
 echo "✅ Entorno activado. Python en uso:"
 which python
+
+echo "Iniciando PDF to Image:"
+for i in {3..1}
+do
+    echo "$i..."
+    sleep 1
+done
+
+./start.sh
